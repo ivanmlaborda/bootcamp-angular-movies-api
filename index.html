@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="moviesApp">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Movies Catalog</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+
+<body>
+  <header>
+    <container>
+      <nav>
+        <ul>
+          <li><a href="#!/">Home</a></li>
+          <li><a href="#!/popular">Popular</a></li>
+          <li><a href="#!/upcoming">Upcoming</a></li>
+          <li><a href="#!/now">Now Playing</a></li>
+          <li><a href="#!/top">Top rated</a></li>
+        </ul>
+      </nav>
+    </container>
+  </header>
+  <!-- @ng-view begin -->
+  <ng-view>
+  </ng-view>
+  <!-- ng-view end -->
+  <footer>
+    <p>Angular Test ===> {{2+5===7}}</p>
+  </footer>
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.3/angular.min.js"></script>
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.3/angular-route.min.js"></script>
+  <!-- MAIN MODULE -->
+  <script src="js/app.js"></script>
+  <!-- SERVICES -->
+  <script src="js/services/MovieService.js"></script>
+  <!-- ROUTE / -->
+  <script type="text/javascript" src="js/routes/home/controller.js"></script>
+  <script type="text/javascript" src="js/routes/home/index.js"></script>
+
+  <!-- ROUTE /popular -->
+  <script type="text/javascript" src="js/routes/popular/controller.js"></script>
+  <script type="text/javascript" src="js/routes/popular/index.js"></script>
+</body>
+
+</html>
