@@ -9,12 +9,21 @@
 <div class="container">
   <div class="col-sm-6 col-sm-offset-3 col-md-6 col-md-offset-3">
     <div class="input-group search-bar">
-      <input type="text" class="form-control" placeholder="Search for Upcoming Movies...">
+      <input type="text" class="form-control" placeholder="Search for Upcomings Movies...">
       <span class="input-group-btn">
         <button class="btn btn-default" type="button">Go!</button>
       </span>
     </div>
   </div>
 </div>
+<div class="container">
+</div>
+<div class="container movie-grid center-block">
+  <div class="thumbnail" ng-repeat="movie in upcomings">
+    <img class="thumb-img" src="https://image.tmdb.org/t/p/w500{{movie.poster_path}}" alt="...">
+    <div class="caption">
+      <h5 class="text-center">{{movie.title}}</h5>
+    </div>
+  </div>
+</div>
 <!-- @end search
-

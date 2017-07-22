@@ -1,12 +1,16 @@
 body {
   background-color: #000000;
+  color: white;
+
 }
 
 header {
   .navbar {
     border: 0px;
     background-color: #D2232A;
+    // background-image: url(../img/overlay-pattern.png);
     color: white;
+    font-family: 'Nothing You Could Do';
   
     .navbar-brand {
       color: #FFCB05;
@@ -21,6 +25,7 @@ header {
         a {
           color: white;
           font-weight: bold;
+          font-size: 16px;
         }
         a:hover {
           background-color: #EA3A4C;
@@ -82,6 +87,7 @@ footer {
     margin: 50px 20px;
     border: 0px;
     background-color: #D2232A;
+
     img {
       width: 170px;
       max-height: 200px;
