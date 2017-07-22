@@ -4,7 +4,8 @@ angular.module('moviesApp')
 
     MovieService.getPopulars()
       .then(function (response) {
-        $scope.populars = response.data
-        console.log(response.data)
+        $scope.populars = response.data.results
+        console.log(response.data.results)
+        $scope.imgPath
       })
   })

@@ -1,9 +1,77 @@
-.page-header .subtitle {
-  margin-left: 20px;
+body {
+  background-color: #000000;
 }
 
-footer .container {
-  position: absolute;
-  bottom: 0vh;
-  right: 30px;
+header .navbar {
+  border: 0px;
+  background-color: #D2232A;
+  color: white;
+}
+header .navbar .navbar-brand {
+  color: #FFCB05;
+  font-weight: bold;
+}
+header .navbar .navbar-brand:hover {
+  font-size: 20px;
+  color: #FFCB05;
+}
+header .navbar .navbar-nav li a {
+  color: white;
+  font-weight: bold;
+}
+header .navbar .navbar-nav li a:hover {
+  background-color: #EA3A4C;
+  color: #FFCB05;
+  font-weight: bold;
+  font-size: 17px;
+}
+header .navbar .navbar-nav li .active {
+  background-color: #EA3A4C;
+}
+
+.page-header h1 {
+  font-size: 40px;
+  margin-bottom: 40px;
+  font-family: 'Monoton';
+  color: #F58220;
+}
+.page-header .subtitle {
+  margin-left: 20px;
+  font-family: 'Monoton';
+  color: #FFCB05;
+}
+
+.search-bar {
+  margin-top: 40px;
+}
+.search-bar .form-control {
+  background-color: #E9FFE8;
+}
+.search-bar button {
+  background-color: #E9FFE8;
+}
+
+.movie-grid {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  margin-top: 40px;
+}
+.movie-grid .thumbnail {
+  width: 180px;
+  height: 290px;
+  margin: 50px 20px;
+  border: 0px;
+  background-color: #D2232A;
+}
+.movie-grid .thumbnail img {
+  width: 170px;
+  max-height: 200px;
+}
+.movie-grid .thumbnail .caption h5 {
+  font-weight: bold;
+  font-size: 13px;
+  color: white;
+  text-shadow: 1px 1px 1px 1px;
 }

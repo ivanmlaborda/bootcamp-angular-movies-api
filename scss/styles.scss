@@ -1,17 +1,98 @@
-.page-header {
-  .subtitle {
-    margin-left: 20px;
+body {
+  background-color: #000000;
+}
+
+header {
+  .navbar {
+    border: 0px;
+    background-color: #D2232A;
+    color: white;
+  
+    .navbar-brand {
+      color: #FFCB05;
+      font-weight: bold;
+    }
+    .navbar-brand:hover {
+      font-size: 20px;
+      color: #FFCB05;
+    }
+    .navbar-nav {
+      li {
+        a {
+          color: white;
+          font-weight: bold;
+        }
+        a:hover {
+          background-color: #EA3A4C;
+          color: #FFCB05;
+          font-weight: bold;
+          font-size: 17px;
+        }
+        .active {
+          background-color: #EA3A4C;
+        }
+      }
+    }
   }
 }
 
-footer {
-  .container {
-    position: absolute;
-    bottom: 0vh;
-    right: 30px;
+
+//TEMPLATE
+
+.page-header {
+    h1 {
+      font-size: 40px;
+      margin-bottom: 40px;
+      font-family: 'Monoton';
+      color: #F58220;
+    }
+    .subtitle {
+      margin-left: 20px;
+      font-family: 'Monoton';
+      color: #FFCB05;
+    }
   }
+
+footer {
+  .container {}
 }
 
 .search-bar {
+  margin-top: 40px;
 
+  .form-control {
+    background-color: #E9FFE8;
+  }
+  button {
+    background-color: #E9FFE8;  
+  }
+}
+
+
+
+.movie-grid {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  margin-top: 40px;
+  .thumbnail {
+    width: 180px;
+    height: 290px;
+    margin: 50px 20px;
+    border: 0px;
+    background-color: #D2232A;
+    img {
+      width: 170px;
+      max-height: 200px;
+    }
+    .caption {
+      h5 {
+        font-weight: bold;
+        font-size: 13px; 
+        color: white;
+        text-shadow: 1px 1px 1px 1px;
+      }
+    }
+  }
 }
