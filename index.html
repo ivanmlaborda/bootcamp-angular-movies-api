@@ -3,30 +3,50 @@
 
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Movies Catalog</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
+  <!-- @header begin -->
   <header>
-    <container>
-      <nav>
-        <ul>
-          <li><a href="#!/">Home</a></li>
-          <li><a href="#!/popular">Popular</a></li>
-          <li><a href="#!/upcoming">Upcoming</a></li>
-          <li><a href="#!/now">Now Playing</a></li>
-          <li><a href="#!/top">Top rated</a></li>
-        </ul>
-      </nav>
-    </container>
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Home</a>
+        </div>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#!/popular">Popular <span class="sr-only">(current)</span></a></li>
+            <li><a href="#!/upcoming">Upcoming</a></li>
+            <li><a href="#!/now-playing">Now Playing</a></li>
+            <li><a href="#!/top-rated">Top Rated</a></li>
+          </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+      </div>
+      <!-- /.container-fluid -->
+    </nav>
   </header>
+  <!-- @header end -->
   <!-- @ng-view begin -->
   <ng-view>
   </ng-view>
   <!-- ng-view end -->
   <footer>
-    <p>Angular Test ===> {{2+5===7}}</p>
+    <div class="container">
+      <p class="text-center">Ivan Martinez Laborda 2017 &copy</p>
+    </div>
   </footer>
   <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.3/angular.min.js"></script>
   <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.3/angular-route.min.js"></script>
@@ -37,10 +57,22 @@
   <!-- ROUTE / -->
   <script type="text/javascript" src="js/routes/home/controller.js"></script>
   <script type="text/javascript" src="js/routes/home/index.js"></script>
-
   <!-- ROUTE /popular -->
   <script type="text/javascript" src="js/routes/popular/controller.js"></script>
   <script type="text/javascript" src="js/routes/popular/index.js"></script>
+  <!-- ROUTE /upcoming -->
+  <script type="text/javascript" src="js/routes/upcoming/controller.js"></script>
+  <script type="text/javascript" src="js/routes/upcoming/index.js"></script>
+  <!-- ROUTE /now-playing -->
+  <script type="text/javascript" src="js/routes/now-playing/controller.js"></script>
+  <script type="text/javascript" src="js/routes/now-playing/index.js"></script>
+  <!-- ROUTE /top-rated -->
+  <script type="text/javascript" src="js/routes/top-rated/controller.js"></script>
+  <script type="text/javascript" src="js/routes/top-rated/index.js"></script>
+  <!-- JQUERY -->
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  <!-- BOOTSTRAP -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </body>
 
 </html>
