@@ -106,13 +106,8 @@ footer {
   background-color: #D2232A;
 }
 
-.modal-header {
-  position: relative;
-}
 .modal-header .btn-modal-close {
-  position: absolute;
-  right: 20px;
-  display: inline;
+  float: left;
   background-color: Transparent;
   background-repeat: no-repeat;
   border: none;
@@ -123,7 +118,7 @@ footer {
   color: #FFCB05;
 }
 .modal-header h3 {
-  display: inline;
+  float: right;
   font-weight: bold;
   text-shadow: 2px 2px 4px #000000;
   margin-right: 30px;
