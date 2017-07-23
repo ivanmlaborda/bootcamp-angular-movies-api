@@ -9,18 +9,16 @@
 <div class="container">
   <div class="col-sm-6 col-sm-offset-3 col-md-6 col-md-offset-3">
     <div class="input-group search-bar">
-      <input type="text" class="form-control" placeholder="Search for Top Rated Movies...">
-      <span class="input-group-btn">
-        <button class="btn btn-default" type="button"><span class="glyphicon glyphicon-play"></span></button>
-      </span>
-    </div>
+  <span class="input-group-addon"><span class="glyphicon glyphicon-play"></span></span>
+  <input type="text" class="form-control" placeholder="Search for Top Rated Movies..." ng-model='searchText' id="searchText">
+</div>
   </div>
 </div>
 <div class="container">
 
 </div>
 <div class="container movie-grid center-block">
-  <div class="thumbnail" ng-repeat="movie in topRateds">
+  <div class="thumbnail" ng-repeat="movie in topRateds  | filter:searchText">
     <img class="thumb-img" src="https://image.tmdb.org/t/p/w500{{movie.poster_path}}" alt="...">
     <div class="caption">
       <h5 class="text-center">{{movie.title}}</h5>

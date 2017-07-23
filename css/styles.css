@@ -43,15 +43,13 @@ header .navbar .navbar-nav li .active {
   color: #FFCB05;
 }
 
+footer {
+  margin-top: 30px;
+  font-family: 'Michroma';
+}
+
 .search-bar {
   margin-top: 40px;
-}
-.search-bar .form-control {
-  background-color: #E9FFE8;
-}
-.search-bar button {
-  background-color: #E9FFE8;
-  font-weight: bold;
 }
 
 .movie-grid {
