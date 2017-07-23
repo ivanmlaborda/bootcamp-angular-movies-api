@@ -124,13 +124,28 @@ footer {
 }
 
 .modal-header {
+  position: relative;
+  .btn-modal-close {
+    position: absolute;
+    right: 20px;
+    display: inline;
+    background-color: Transparent;
+    background-repeat: no-repeat;
+    border: none;
+    cursor: pointer;
+    overflow: hidden;
+    outline: none;
+    font-size: 30px;
+    color: #FFCB05;
+  }
   h3 {
+    display: inline;
     font-weight: bold;
     text-shadow: 2px 2px 4px #000000;
     margin-right: 30px;
-
   }
 }
+
 .modal-body {
   .modal-img {
     img {
@@ -138,8 +153,7 @@ footer {
     }
   }
   .modal-info {
-    max-width: 300px;
-    // margin-left: 20px;
+    max-width: 300px; // margin-left: 20px;
     ul {
       margin-top: 15px;
       li {
