@@ -14,17 +14,40 @@
     </div>
   </div>
 </div>
-<div class="container">
-  <!--   <ul>
-    <li ng-repeat="movie in populars">{{movie.title}}</li>
-  </ul> -->
-</div>
+<!-- @end search -->
 <div class="container movie-grid center-block">
   <div class="thumbnail" ng-repeat="movie in populars | filter:searchText">
-    <img class="thumb-img" src="https://image.tmdb.org/t/p/w500{{movie.poster_path}}" alt="...">
-    <div class="caption">
-      <h5 class="text-center">{{movie.title}}</h5>
+    <h5 class="text-center">{{movie.title | limitTo: 30}}</h5>
+    <img class="thumb-img" ng-src="https://image.tmdb.org/t/p/w185{{movie.poster_path}}" alt="..." ng-animate="{enter: 'animate-enter', leave: 'animate-leave'}">
+    <p class="text-justify">{{movie.overview | limitTo: 70}}...</p>
+    <!-- Modal Button -->
+    <button type="button" class="btn-modal" data-toggle="modal" data-target="#{{movie.id}}">
+      <span class="glyphicon glyphicon-info-sign"></span>
+    </button>
+    <!-- Modal -->
+    <div class="modal fade movie-modal" id="{{movie.id}}" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h3 class="modal-title text-right">{{ movie.title }}</h3>
+          </div>
+          <div class="modal-body">
+            <div class="row">
+              <div class="col-sm-5 col-md-5">
+                <img class="modal-img img-responsive" ng-src="https://image.tmdb.org/t/p/w500{{movie.poster_path}}" alt="" />
+              </div>
+              <div class="col-sm-5 col-md-5 modal-info">
+                <ul class="center-block list-unstyled">
+                  <li class="text-justify"><strong>Synopsis</strong> {{movie.overview}}</li>
+                  <li><strong>Film Premiere</strong> {{movie.release_date | limitTo: 4}}</li>
+                  <li><strong>Rating</strong> {{movie.vote_average}} of {{movie.vote_count}} votes</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- /Modal -->
+      </div>
     </div>
   </div>
 </div>
-<!-- @end search

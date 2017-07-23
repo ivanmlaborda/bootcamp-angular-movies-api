@@ -60,19 +60,67 @@ footer {
   margin-top: 40px;
 }
 .movie-grid .thumbnail {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   width: 180px;
-  height: 290px;
+  height: 320px;
   margin: 50px 20px;
   border: 0px;
   background-color: #D2232A;
 }
 .movie-grid .thumbnail img {
   width: 170px;
-  max-height: 200px;
+  height: 200px;
+  margin-top: 5px;
+  padding: 2px;
 }
-.movie-grid .thumbnail .caption h5 {
+.movie-grid .thumbnail h5 {
+  margin-top: 5px;
   font-weight: bold;
   font-size: 13px;
   color: white;
   text-shadow: 1px 1px 1px 1px;
+}
+.movie-grid .thumbnail p {
+  margin-top: 5px;
+  font-size: 11px;
+}
+.movie-grid .thumbnail .btn-modal {
+  position: absolute;
+  left: 75%;
+  top: 65%;
+  background-color: Transparent;
+  background-repeat: no-repeat;
+  border: none;
+  cursor: pointer;
+  overflow: hidden;
+  outline: none;
+  font-size: 30px;
+  color: #FFCB05;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+.modal-content {
+  background-color: #D2232A;
+}
+
+.modal-header h3 {
+  font-weight: bold;
+  text-shadow: 2px 2px 4px #000000;
+  margin-right: 30px;
+}
+
+.modal-body .modal-img img {
+  width: 500px;
+}
+.modal-body .modal-info {
+  max-width: 300px;
+}
+.modal-body .modal-info ul {
+  margin-top: 15px;
+}
+.modal-body .modal-info ul li {
+  margin-top: 10px;
 }

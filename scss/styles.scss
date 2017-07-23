@@ -62,8 +62,7 @@ footer {
 .search-bar {
   margin-top: 40px;
 
-  .form-control {
-  }
+  .form-control {}
 }
 
 
@@ -76,22 +75,75 @@ footer {
   justify-content: center;
   margin-top: 40px;
   .thumbnail {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     width: 180px;
-    height: 290px;
+    height: 320px;
     margin: 50px 20px;
     border: 0px;
     background-color: #D2232A;
 
     img {
       width: 170px;
-      max-height: 200px;
+      height: 200px;
+      margin-top: 5px;
+      padding: 2px;
     }
-    .caption {
-      h5 {
-        font-weight: bold;
-        font-size: 13px;
-        color: white;
-        text-shadow: 1px 1px 1px 1px;
+    h5 {
+      margin-top: 5px;
+      font-weight: bold;
+      font-size: 13px;
+      color: white;
+      text-shadow: 1px 1px 1px 1px;
+    }
+    p {
+      margin-top: 5px;
+      font-size: 11px;
+    }
+    .btn-modal {
+      position: absolute;
+      left: 75%;
+      top: 65%;
+      background-color: Transparent;
+      background-repeat: no-repeat;
+      border: none;
+      cursor: pointer;
+      overflow: hidden;
+      outline: none;
+      font-size: 30px;
+      color: #FFCB05;
+      text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    }
+  }
+}
+
+.modal-content {
+  background-color: #D2232A;
+}
+
+.modal-header {
+  h3 {
+    font-weight: bold;
+    text-shadow: 2px 2px 4px #000000;
+    margin-right: 30px;
+
+  }
+}
+.modal-body {
+  .modal-img {
+    img {
+      width: 500px;
+    }
+  }
+  .modal-info {
+    max-width: 300px;
+    // margin-left: 20px;
+    ul {
+      margin-top: 15px;
+      li {
+        margin-top: 10px;
       }
     }
   }
