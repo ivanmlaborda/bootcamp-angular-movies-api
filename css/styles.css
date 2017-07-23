@@ -7,7 +7,7 @@ header .navbar {
   border: 0px;
   background-color: #D2232A;
   color: white;
-  font-family: 'Nothing You Could Do';
+  font-family: 'Michroma';
 }
 header .navbar .navbar-brand {
   color: #FFCB05;
@@ -19,7 +19,6 @@ header .navbar .navbar-brand:hover {
 }
 header .navbar .navbar-nav li a {
   color: white;
-  font-weight: bold;
   font-size: 16px;
 }
 header .navbar .navbar-nav li a:hover {
@@ -35,12 +34,12 @@ header .navbar .navbar-nav li .active {
 .page-header h1 {
   font-size: 40px;
   margin-bottom: 40px;
-  font-family: 'Monoton';
+  font-family: 'Slackey';
   color: #F58220;
 }
 .page-header .subtitle {
   margin-left: 20px;
-  font-family: 'Monoton';
+  font-family: 'Slackey';
   color: #FFCB05;
 }
 
@@ -52,6 +51,7 @@ header .navbar .navbar-nav li .active {
 }
 .search-bar button {
   background-color: #E9FFE8;
+  font-weight: bold;
 }
 
 .movie-grid {

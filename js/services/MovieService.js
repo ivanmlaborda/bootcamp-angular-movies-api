@@ -1,31 +1,32 @@
 angular.module('moviesApp')
   .factory('MovieService', function ($http) {
     var apiKey = '30e927d7a4ae25c0027e118d9748d27c'
-    var url = 'https://api.themoviedb.org/3/<%CATEGORY%>?&api_key=<%API_KEY%>'
+    var url = 'https://api.themoviedb.org/3/movie/<%CATEGORY%>?api_key=<%API_KEY%>&language=en-US&page=1'
     function getPopulars () {
-      var category = 'discover/movie?sort_by=popularity.desc'
-      var urlSearch = url.replace('<%API_KEY%>', apiKey).replace('<%CATEGORY%>', category)
-      return $http.get(urlSearch)
+      var category = 'popular'
+      var urlSearch = url
+      url.replace('<%API_KEY%>', apiKey).replace('<%CATEGORY%>', category)
+      console.log(urlSearch)
+      return $http.get('https://api.themoviedb.org/3/movie/popular?api_key=30e927d7a4ae25c0027e118d9748d27c&language=en-US&page=1')
     }
-
     function getNowPlaying () {
-      var category = 'discover/movie?sort_by=now_playing.desc'
+      var category = 'now_playing'
       var urlSearch = url.replace('<%API_KEY%>', apiKey).replace('<%CATEGORY%>', category)
-      return $http.get(urlSearch)
+      console.log(urlSearch)
+      return $http.get(' https://api.themoviedb.org/3/movie/now_playing?api_key=30e927d7a4ae25c0027e118d9748d27c&language=en-US&page=1')
     }
-
     function getTopRateds () {
-      var category = 'discover/movie?sort_by=vote_average.desc'
+      var category = 'vote_average'
       var urlSearch = url.replace('<%API_KEY%>', apiKey).replace('<%CATEGORY%>', category)
-      return $http.get(urlSearch)
+      console.log(urlSearch)
+      return $http.get('https://api.themoviedb.org/3/movie/top_rated?api_key=30e927d7a4ae25c0027e118d9748d27c&language=en-US&page=1')
     }
-
     function getUpcomings () {
-      var category = 'discover/movie?sort_by=upcomings.desc'
+      var category = 'upcomings'
       var urlSearch = url.replace('<%API_KEY%>', apiKey).replace('<%CATEGORY%>', category)
-      return $http.get(urlSearch)
+      console.log(urlSearch)
+      return $http.get('https://api.themoviedb.org/3/movie/upcoming?api_key=30e927d7a4ae25c0027e118d9748d27c&language=en-US&page=1')
     }
-
     return {
       getPopulars: getPopulars,
       getNowPlaying: getNowPlaying,

@@ -1,17 +1,15 @@
 body {
   background-color: #000000;
   color: white;
-
 }
 
 header {
   .navbar {
     border: 0px;
-    background-color: #D2232A;
-    // background-image: url(../img/overlay-pattern.png);
+    background-color: #D2232A; // background-image: url(../img/overlay-pattern.png);
     color: white;
-    font-family: 'Nothing You Could Do';
-  
+    font-family: 'Michroma';
+
     .navbar-brand {
       color: #FFCB05;
       font-weight: bold;
@@ -24,7 +22,6 @@ header {
       li {
         a {
           color: white;
-          font-weight: bold;
           font-size: 16px;
         }
         a:hover {
@@ -43,20 +40,19 @@ header {
 
 
 //TEMPLATE
-
 .page-header {
-    h1 {
-      font-size: 40px;
-      margin-bottom: 40px;
-      font-family: 'Monoton';
-      color: #F58220;
-    }
-    .subtitle {
-      margin-left: 20px;
-      font-family: 'Monoton';
-      color: #FFCB05;
-    }
+  h1 {
+    font-size: 40px;
+    margin-bottom: 40px;
+    font-family: 'Slackey';
+    color: #F58220;
   }
+  .subtitle {
+    margin-left: 20px;
+    font-family: 'Slackey';
+    color: #FFCB05;
+  }
+}
 
 footer {
   .container {}
@@ -66,11 +62,10 @@ footer {
   margin-top: 40px;
 
   .form-control {
-    background-color: #E9FFE8;
   }
-  button {
-    background-color: #E9FFE8;  
-  }
+}
+
+
 }
 
 
@@ -95,7 +90,7 @@ footer {
     .caption {
       h5 {
         font-weight: bold;
-        font-size: 13px; 
+        font-size: 13px;
         color: white;
         text-shadow: 1px 1px 1px 1px;
       }
